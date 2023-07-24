@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibraNet</title>
+    <link rel="icon" type="image/x-icon" href="/img/libranet_favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="container">
+        <section class="hero__section">
+          <h1 class="hero__heading">
+            Discover the worlds best books at your fingertips
+          </h1>
+          <h3 class="hero__sub">
+            Enjoy unlimited access to the world’s best books
+          </h3>
+          <div class="btn__wraper">
+            <button class="btn-yellow btn-animated" id="btn__show__books">
+              Browse your collection
+            </button>
+            <button class="btn-yellow btn-animated" id="add__book">
+              Add new book
+            </button>
+          </div>
+        </section>
+
+        <section class="feature__section">
+          <div class="table-responsive">
+            <table id="books__list" class=""></table>
+          </div>
+        </section>
+        <div class="popup" id="popup">
+          <div class="popup-content">
+            <button class="close" id="close_btn">X</button>
+            <h1 class="popup_text">Add a new book to your collection</h1>
+            <form action="#" class="form" method="get">
+              <label for="title"></label>
+              <input
+                type="text"
+                id="title"
+                placeholder="Title of the book"
+                required
+              />
+
+              <label for="author"></label>
+              <input
+                type="text"
+                id="author"
+                placeholder="Author of the book"
+                required
+              />
+
+              <label for="category"></label>
+              <input
+                type="text"
+                id="category"
+                placeholder="Category of the book"
+                required
+              />
+              <div class="readit">
+                <label for="read">Did you read this book?</label>
+                <input type="checkbox" id="book_read" name="isRead" />
+              </div>
+
+              <button type="button" id="submit_btn" class="btn-yellow submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="footer__logo-box">
+            <img src="img/logo.png" alt="logo" class="footer__logo" />
+          </div>
+          <div class="row">
+            <div class="col-1-2">
+              <p class="footer__copyright">
+                Copyright &copy; 2023 by
+                <a href="#" class="footer__link">LibraNet</a>. All rights
+                reserved. This website is an online library project designed and
+                developed by <a href="#" class="footer__link">Goshe Karov</a>.
+                No part of this website may be reproduced or distributed without
+                permission.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
